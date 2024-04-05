@@ -31,7 +31,7 @@ const App = () => {
     return (total / scores.length).toFixed(2);
   };
 
-  return (
+    return (
     <div>
       <h1>Yes/No Questionnaire</h1>
       {Object.entries(QUESTIONS).map(([id, question]) => (
@@ -63,8 +63,8 @@ const App = () => {
       ))}
       <button onClick={handleRun}>Submit</button>
       {averageScore !== null && <p>Average score: {averageScore}%</p>}
-    </div>
-  );
+      </div>
+    );
 };
 
 
